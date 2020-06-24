@@ -135,28 +135,6 @@ public class Calculator {
 		JPanel keypad = new JPanel();
 		keypad.setLayout(new MigLayout("insets 0 0 0 0", "[]5[]5[]5[]", "[]5[]5[]5[]"));
 		
-//		JPanel keypad2 = new JPanel();
-//		keypad2.setLayout(new MigLayout("insets 0 0 0", "[][grow][]", "[][][]"));
-//		
-//		// AC BUTTON
-//		JButton acButton = new JButton("AC");
-//		acButton.setName("AC"); 
-//		acButton.addActionListener(buttonListener);
-//		keypad2.add(acButton);
-//		
-//		// SOLVE BUTTON
-//		JButton solveButton = new JButton("=");
-//		solveButton.setName("="); 
-//		solveButton.addActionListener(buttonListener);
-//		solveButton.addActionListener(textAreaListener);
-//		keypad2.add(solveButton, "span2");
-//		
-//		// CONVERT BUTTON
-//		JButton convertButton = new JButton("convert");
-//		convertButton.setName("convert"); 
-//		convertButton.addActionListener(buttonListener);
-//		keypad2.add(convertButton);
-		
 		
 		// MIGLAYOUT: COLUMN ROW WIDTH HEIGHT
 		String[] keys = { 
@@ -192,7 +170,6 @@ public class Calculator {
 		
 		c.getContentPane().add(userInputPanel, BorderLayout.CENTER);
 		c.getContentPane().add(keypad, BorderLayout.SOUTH);
-//		c.getContentPane().add(keypad2, BorderLayout.SOUTH);
 		
 		try {
 			c.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

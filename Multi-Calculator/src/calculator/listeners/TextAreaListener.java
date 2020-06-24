@@ -10,7 +10,6 @@ import calculator.value_handling.Calculator;
  * <code>TextAreaListener</code> implements ActionListener and Runnable to
  * continuously update the operation history to the <code>JTextArea</code> 
  * of the calculator.
- 
  * @author sarablinn
  *
  */

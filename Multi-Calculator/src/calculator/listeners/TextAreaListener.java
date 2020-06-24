@@ -6,6 +6,14 @@ import javax.swing.JTextArea;
 
 import calculator.value_handling.Calculator;
 
+/**
+ * <code>TextAreaListener</code> implements ActionListener and Runnable to
+ * continuously update the operation history to the <code>JTextArea</code> 
+ * of the calculator.
+ 
+ * @author sarablinn
+ *
+ */
 public class TextAreaListener implements ActionListener, Runnable{
 
 	private static Calculator gui = new Calculator();
@@ -16,8 +24,6 @@ public class TextAreaListener implements ActionListener, Runnable{
 		Runnable runnable = new TextAreaListener();
 		Thread thread = new Thread(runnable);
 		thread.start();
-		// when the data is added to the JTextArea, it will always scroll down.
-		//hist.setCaretPosition(hist.getText().length() - 1);
 	}
 		
 
